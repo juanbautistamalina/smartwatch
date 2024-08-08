@@ -1,0 +1,18 @@
+.calendar{
+    width: 100px;
+    height: 25px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 33%;
+}
+
+
+#date{
+    font-size: 1em;
+    margin: 5px;
+}

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+}
+
+
+.smartwatch{
+    width: 300px;
+    height: 300px;
+    border: 4px solid #000;
+    background-image: url(../img/wallpaper\ 1.jpg);
+    background-position: center;
+    background-size: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    position: relative;
+}
+
+
+/* BOTON ENCENDIDO */
+.on-off{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    right: -20px;
+    top: 40%;
+    position: absolute;
+    background: #666;
+    border: 2px solid  #222;
+    z-index: -1;
+    width: 20px;
+    height: 30px;
+}
+
+/* BOTONES DE NAVEGACIÓN */
+.btn{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    background-size: 35px;
+}
+
+.btn:hover{
+    opacity: 0.6;
+}
+
+.up{
+    background-image: url(../img/btn-top.png);
+    left: 127px;
+}
+
+.left{
+    background-image: url(../img/btn-left.png);
+    top: 125px;
+}
+
+.right{
+    background-image: url(../img/btn-right.png);
+    top: 125px;
+    right: 0;
+}
+
+.down{
+    background-image: url(../img/btn-bottom.png);
+    bottom: 0;
+    left: 127px;
+}
+
+
+/* Íconos en pantalla */
+.battery-icon{
+    position: absolute;
+    top: 70%;
+    left: 44%;
+    background-image: url(../img/battery\ icon.png);
+    width: 35px;
+    height: 35px;
+    background-size: 35px;
+}
+
+
