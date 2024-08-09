@@ -9,7 +9,7 @@
 - Interfaz minimalista y elegante
 - Muestra el día de la semana, la fecha y la hora actual
 - Botones para navegación
-- Botón de encendido y apagado de pantalla (IMPLEMENTAR)
+- Botón de encendido y apagado de pantalla 
 - Apartado con Cronómetro (IMPLEMENTAR)
 - Apartado de Información (IMPLEMENTAR)
 - Apartado de Notificaciones (IMPLEMENTAR)
