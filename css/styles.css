@@ -16,33 +16,71 @@ body{
     background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
 }
 
-
+/* Pantalla */
 .smartwatch{
     width: 300px;
     height: 300px;
-    border: 4px solid #000;
-    background-image: url(../img/wallpaper\ 1.jpg);
+    border: 5px solid #000;
+    background-image: url(../img/wallpapers/wallpaper\ 1.jpg);
     background-position: center;
     background-size: 100%;
     object-fit: cover;
     border-radius: 20px;
     position: relative;
+    transition: background-color 3s ease-in-out, background-image 3s ease-in-out;
+
+}
+
+/* Pantalla Apagada */
+.smartwatch.blackout {
+    background-color: #000; 
+    background-image: none; 
 }
 
 
-/* BOTON ENCENDIDO */
+
+/* Botón de Encendido/Apagado */
 .on-off{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    right: -20px;
-    top: 40%;
+    right: -28px;
+    top: 20%;
     position: absolute;
     background: #666;
-    border: 2px solid  #222;
-    z-index: -1;
-    width: 20px;
+    border: 4px solid  #111;
+    border-left-color: #000;
+    width: 25px;
     height: 30px;
+    cursor: pointer;
 }
+
+
+/* Íconos en pantalla */
+.battery, .config{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-size: 35px;
+}
+
+.config{
+    background-image: url(../img/config.png);
+    top: 5%;
+    left: 85%;
+    width: 25px;
+    height: 25px;
+    background-size: 25px;
+    cursor: pointer;
+}
+
+
+.battery{
+    background-image: url(../img/battery\ icon.png);
+    top: 70%;
+    left: 44%;
+}
+
+
 
 /* BOTONES DE NAVEGACIÓN */
 .btn{
@@ -51,6 +89,7 @@ body{
     position: absolute;
     transition: opacity .2s ease-in-out;
     background-size: 35px;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -78,17 +117,3 @@ body{
     bottom: 0;
     left: 127px;
 }
-
-
-/* Íconos en pantalla */
-.battery-icon{
-    position: absolute;
-    top: 70%;
-    left: 44%;
-    background-image: url(../img/battery\ icon.png);
-    width: 35px;
-    height: 35px;
-    background-size: 35px;
-}
-
-
