@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smartwatch</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Hojas de Estilo -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/clock.css">
     <link rel="stylesheet" href="css/calendar.css">
@@ -13,32 +16,39 @@
 <body>
     <div class="smartwatch">
         <div class="screen">
+
+            <!-- Botones -->
             <div class="on-off"></div>
             <div class="btn up"></div>
             <div class="btn right"></div>
             <div class="btn left"></div>
             <div class="btn down"></div>
 
-            <!-- Fecha y Día -->
-            <div class="calendar">
-                <p id="day">Sunday</p>
-                <p id="date">01</p>
-            </div>
-
-            <!-- Reloj -->
-            <div class="container">
-                <div class="clock">
-                    <span id="hrs">00</span>
-                    <span id="min">00</span>
-                    <span id="sec">00</span>
+            <div class="items">
+                <!-- Fecha y Día -->
+                <div class="calendar">
+                    <p id="day">Sunday</p>
+                    <p id="date">01</p>
                 </div>
+
+                <!-- Reloj -->
+                <div class="container">
+                    <div class="clock">
+                        <span id="hrs">00</span>
+                        <span id="min">00</span>
+                        <span id="sec">00</span>
+                    </div>
+
+                </div>
+                <div class="config"></div>
+                <div class="battery"></div>
             </div>
 
-            <div class="battery-icon"></div>
+
         </div>
     </div>
-    <script src="script.js"></script>
-    <script src="clock.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/clock.js"></script>
 </body>
 
 </html>
