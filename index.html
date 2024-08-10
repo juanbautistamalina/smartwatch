@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smartwatch</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 
     <!-- Hojas de Estilo -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/clock.css">
     <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/chronometer.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="css/information.css">
+    <link rel="stylesheet" href="css/calculator.css">
 </head>
 
 <body>
@@ -38,10 +42,87 @@
                         <span id="min">00</span>
                         <span id="sec">00</span>
                     </div>
-
                 </div>
+
                 <div class="config"></div>
                 <div class="battery"></div>
+            </div>
+
+            <div class="pantalla-2">
+                <div class="contenedor-cronometro">
+                    <div class="contenedor-interno">
+                        <div id="cronometro">00:00:00</div>
+                        <div class="contenedor-botones">
+                            <button id="boton-inicio-pausa" class="boton iniciar">
+                                <i id="play"></i>
+                            </button>
+                            <button id="boton-reiniciar" class="boton">
+                                <i id="reset"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pantalla-3">
+                <div class="notification-icon"><img src="img/icons/notification.png"></div>
+                <div class="contenedor-notificaciones">
+                    <p id="notifications">Notificaciones</p>
+                    <p>No Hay Notificaciones</p>
+                </div>
+            </div>
+
+            <!-- Información -->
+            <div class="pantalla-4">
+                <div class="info-icon"><img src="img/icons/info.png"></div>
+                <div class="info-section">
+                    <p>Detalles</p>
+                    <p><strong>Versión:</strong> 1.0.0</p>
+                    <p><strong>Desarrollado por:</strong> Juan Bautista Malina</p>
+                    <div class="decorative-bar"></div>
+                  </div>
+            </div>
+
+
+            <!-- Calculadora -->
+            <div class="pantalla-5">
+                <div class="contenedor-calculadora">
+                        <div class="calculator">
+                            <form>
+                                <div class="display">
+                                    <input type="text" name="display" readonly>
+                                </div>
+                                <div>
+                                    <input type="button" value="AC" onclick="display.value = ''" class="gray">
+                                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0, -1)"  class="gray">
+                                    <input type="button" value="." onclick="display.value += '*'"  class="gray">
+                                    <input type="button" value="÷" onclick="display.value += '/'"  class="orange">
+                                </div>
+                                <div>
+                                    <input type="button" value="7" onclick="display.value += '7'">
+                                    <input type="button" value="8" onclick="display.value += '8'">
+                                    <input type="button" value="9" onclick="display.value += '9'">
+                                    <input type="button" value="×" onclick="display.value += '*'" class="orange">
+                                </div>
+                                <div>
+                                    <input type="button" value="4" onclick="display.value += '4'">
+                                    <input type="button" value="5" onclick="display.value += '5'">
+                                    <input type="button" value="6" onclick="display.value += '6'">
+                                    <input type="button" value="-" onclick="display.value += '-'" class="orange">
+                                </div>
+                                <div>
+                                    <input type="button" value="1" onclick="display.value += '1'">
+                                    <input type="button" value="2" onclick="display.value += '2'">
+                                    <input type="button" value="3" onclick="display.value += '3'">
+                                    <input type="button" value="+" onclick="display.value += '+'" class="orange">
+                                </div>
+                                <div>
+                                    <input type="button" value="0" class="cero" onclick="display.value += '0'">
+                                    <input type="button" value="=" class="equal operator orange" onclick="display.value = eval(display.value)">
+                                </div>
+                            </form>
+                    </div>
+                </div>
             </div>
 
 
@@ -49,6 +130,7 @@
     </div>
     <script src="js/script.js"></script>
     <script src="js/clock.js"></script>
+    <script src="js/chronometer.js"></script>
 </body>
 
 </html>
