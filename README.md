@@ -8,13 +8,14 @@
 
 - Interfaz minimalista y elegante
 - Muestra el día de la semana, la fecha y la hora actual en la pantalla inicial
+- Botón de encendido y apagado de pantalla
 - Botones para la navegación
-- Botón de encendido y apagado de pantalla 
+- Botón para cambiar el wallpaper
 - Apartado con Cronómetro
 - Apartado de Calculadora
 - Apartado de Información 
 - Apartado de Notificaciones
-- Botón para cambiar el wallpaper (IMPLEMENTAR)
+
 
 ## Requisitos
 
