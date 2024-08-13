@@ -38,9 +38,10 @@ No se necesita instalación. Solo descarga los archivos y abre `index.html` en t
 
 
 ## Galería 📷
-![img1](https://github.com/user-attachments/assets/a769646f-ec42-401a-8351-51fc0f82449a)
-![img2](https://github.com/user-attachments/assets/e5ddee36-b43a-447a-bb49-e9e856bf2386)
-![img3](https://github.com/user-attachments/assets/f7c282d6-5122-4c2b-8ca9-6def594a1f21)
-![img4](https://github.com/user-attachments/assets/ee34bdb7-add8-4135-a9f3-c9c1d47b8667)
-![img5](https://github.com/user-attachments/assets/225fa545-75dc-4245-b37a-83aa571aee13)
+![img1](https://github.com/user-attachments/assets/40652383-c9dd-42b8-b794-5b9892df7a03)
+![img2](https://github.com/user-attachments/assets/d22da3db-2b63-4c91-84bd-70f12a1d49f2)
+![img3](https://github.com/user-attachments/assets/4fbfac78-ea5f-4dcf-af5f-dfc7a5739b01)
+![img4](https://github.com/user-attachments/assets/22b67244-9530-4c52-8fd5-68c5ff4196cd)
+![img5](https://github.com/user-attachments/assets/b288c0b6-46df-47d7-bba0-7b2bf31d118a)
+![img6](https://github.com/user-attachments/assets/72e931f4-f851-499d-b515-563cd4c7447a)
 
